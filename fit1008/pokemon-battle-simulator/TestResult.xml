@@ -1,0 +1,33 @@
+<testsuite errors="1" failures="0" name="" tests="19" time="0.030">
+<testcase classname="test_battle.TestBattle" name="test_basic_battle" time="0.000"/>
+<testcase classname="test_battle.TestBattle" name="test_complicated_battle" time="0.001"/>
+<testcase classname="test_poke_team.TestPokeTeam" name="test_battle_option_attack" time="0.000"/>
+<testcase classname="test_poke_team.TestPokeTeam" name="test_random" time="0.000"/>
+<testcase classname="test_poke_team.TestPokeTeam" name="test_regen_team" time="0.001"/>
+<testcase classname="test_poke_team.TestPokeTeam" name="test_special_mode_1" time="0.000"/>
+<testcase classname="test_poke_team.TestPokeTeam" name="test_string" time="0.000"/>
+<testcase classname="test_pokemon.TestPokemon" name="test_venusaur_stats" time="0.000"/>
+<testcase classname="test_pokemon_base.TestPokemonBase" name="test_cannot_init" time="0.000"/>
+<testcase classname="test_pokemon_base.TestPokemonBase" name="test_evolution" time="0.000"/>
+<testcase classname="test_pokemon_base.TestPokemonBase" name="test_hp" time="0.000"/>
+<testcase classname="test_pokemon_base.TestPokemonBase" name="test_level" time="0.000"/>
+<testcase classname="test_pokemon_base.TestPokemonBase" name="test_status" time="0.000"/>
+<testcase classname="test_tournament.TestTournament" name="test_balance" time="0.000"/>
+<testcase classname="test_tournament.TestTournament" name="test_creation" time="0.001"/>
+<testcase classname="test_tournament.TestTournament" name="test_metas" time="0.004">
+<error type="AttributeError">Traceback (most recent call last):
+  File "d:\GitHub\a-2\tests\base_test.py", line 47, in _callTestMethod
+    raise e
+  File "d:\GitHub\a-2\tests\base_test.py", line 42, in _callTestMethod
+    method()
+  File "D:\GitHub\a-2\tests\test_tournament.py", line 60, in test_metas
+    l = t.linked_list_with_metas()
+  File "d:\GitHub\a-2\tournament.py", line 232, in linked_list_with_metas
+    loser: PokeTeam = self.losers.serve()
+AttributeError: 'ArrayStack' object has no attribute 'serve'
+</error>
+</testcase>
+<testcase classname="test_tournament.TestTournament" name="test_random" time="0.007"/>
+<testcase classname="test_tower.TestTower" name="test_creation" time="0.009"/>
+<testcase classname="test_tower.TestTower" name="test_duplicates" time="0.005"/>
+</testsuite>
